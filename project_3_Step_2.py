@@ -9,7 +9,7 @@ model = YOLO("yolov8n.pt")
 
 
  
-results = model.train(data='datasets/data.yaml', epochs=150,imgsz=928,batch=16,
+results = model.train(data='datasets/data.yaml', epochs=180,imgsz=928,batch=8,
                       plots=True,save_period=10,name="150")
 model.export()
 
